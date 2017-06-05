@@ -9,12 +9,12 @@ const TodoItem = (data, update) => {
   todo.append(remove);
 
   checkbox.on('change', (e) => {
-    data.completed = !data.completed;
-    update();
+      data.completed = !data.completed;
+      update();
   });
 
   remove.on('click', (e) =>{
-    const idx= state.todos.map(x =>x.text).indexOf(data.text);
+    const idx = state.todos.map(x => x.text).indexOf(data.text);
     state.todos.splice(idx,1);
     update();
   });

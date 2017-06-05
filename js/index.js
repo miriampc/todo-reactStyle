@@ -13,5 +13,5 @@ const state = {
 
 $(_ => {
   const root = $('.root');
-  return root;
+  render(root);
 });
